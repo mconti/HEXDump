@@ -73,5 +73,24 @@ namespace VisualHEX
                 }
             }
         }
+
+        private void dgDati2_LoadingRow(object sender, DataGridRowEventArgs e)
+        {
+            RecordHEX r = e.Row.Item as RecordHEX;
+            if( r!= null )
+            {
+                switch( r.Tipo)
+                {
+                    case RecordType.Data:
+                        e.Row.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xFF, 0xD3, 0xD3));
+                        break;
+
+                    case RecordType.ExtLinearAddr:
+                        e.Row.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xCE, 0xF9, 0xD1));
+                        break;
+
+                }
+            }
+        }
     }
 }

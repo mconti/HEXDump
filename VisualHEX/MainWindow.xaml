@@ -18,6 +18,6 @@
             <Button x:Name="btnApri" Content="Apri" Width="70" Height="50" HorizontalAlignment="Left" Click="btnApri_Click"></Button>
         </StackPanel>
         <DataGrid x:Name="dgDati1" Grid.Row="1"  SelectionChanged="dgDati_SelectionChanged"></DataGrid>
-        <DataGrid x:Name="dgDati2" Grid.Row="2"  ></DataGrid>
+        <DataGrid x:Name="dgDati2" Grid.Row="2" LoadingRow="dgDati2_LoadingRow"></DataGrid>
     </Grid>
 </Window>
