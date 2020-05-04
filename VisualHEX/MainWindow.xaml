@@ -1,0 +1,23 @@
+﻿<Window x:Class="VisualHEX.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisualHEX"
+        mc:Ignorable="d"
+        Title="HEX Dump - Maurizio Conti 2020" Height="700" Width="900"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="200"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Button x:Name="btnApri" Content="Apri" Width="70" Height="50" HorizontalAlignment="Left" Click="btnApri_Click"></Button>
+        </StackPanel>
+        <DataGrid x:Name="dgDati1" Grid.Row="1"  SelectionChanged="dgDati_SelectionChanged"></DataGrid>
+        <DataGrid x:Name="dgDati2" Grid.Row="2"  ></DataGrid>
+    </Grid>
+</Window>
