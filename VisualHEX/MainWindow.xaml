@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VisualHEX"
         mc:Ignorable="d"
-        Title="HEX Dump - Maurizio Conti 2020" Height="700" Width="900"
+        Title="Visual HEX Dump - Maurizio Conti 2020" Height="700" Width="900"
         WindowStartupLocation="CenterScreen"
         >
     <Grid>
